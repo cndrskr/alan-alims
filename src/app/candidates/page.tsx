@@ -50,8 +50,8 @@ export default function CandidatesPage() {
               Ученые Алании
             </h1>
             <p className="google-text-body text-white/90 max-w-3xl mx-auto">
-              Исследуйте достижения выдающихся ученых и исследователей из КБР и
-              КЧР
+              Исследуйте достижения выдающихся ученых и исследователей из
+              Республики Северная Осетия-Алания
             </p>
           </div>
         </div>
@@ -66,12 +66,12 @@ export default function CandidatesPage() {
               onChange={setSearchQuery}
               placeholder="Поиск по имени ученого..."
             />
-            {/*    <FilterSelect
+            <FilterSelect
               value={selectedField}
               onChange={setSelectedField}
               options={scienceFields}
               placeholder="Выберите область науки"
-            /> */}
+            />
           </div>
         </div>
 

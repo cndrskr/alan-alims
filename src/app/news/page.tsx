@@ -3,30 +3,27 @@ export default function NewsPage() {
     {
       id: 1,
       title: "Новые достижения в области физики",
-      excerpt:
-        "Ученые из Северной Осетии представили инновационные исследования в области квантовой физики",
+      excerpt: "Ученые из Северной Осетии представили инновационные исследования в области квантовой физики",
       date: "2024-01-15",
       category: "Физика",
-      image: "/elbrus.jpg",
+      image: "/elbrus.jpg"
     },
     {
       id: 2,
       title: "Международная конференция по медицине",
-      excerpt:
-        "Владикавказ стал площадкой для проведения международной конференции по современной медицине",
+      excerpt: "Владикавказ стал площадкой для проведения международной конференции по современной медицине",
       date: "2024-01-10",
       category: "Медицина",
-      image: "/elbrus.jpg",
+      image: "/elbrus.jpg"
     },
     {
       id: 3,
       title: "Открытие нового исследовательского центра",
-      excerpt:
-        "В республике открылся новый центр научных исследований в области биологии",
+      excerpt: "В республике открылся новый центр научных исследований в области биологии",
       date: "2024-01-05",
       category: "Биология",
-      image: "/elbrus.jpg",
-    },
+      image: "/elbrus.jpg"
+    }
   ];
 
   return (
@@ -39,7 +36,7 @@ export default function NewsPage() {
               Новости науки
             </h1>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Последние новости и события из мира науки
+              Последние новости и события из мира науки в Республике Северная Осетия-Алания
             </p>
           </div>
         </div>
@@ -53,7 +50,7 @@ export default function NewsPage() {
               <article key={item.id} className="academic-card p-6">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="md:w-1/3">
-                    <div
+                    <div 
                       className="w-full h-48 bg-cover bg-center rounded-lg"
                       style={{ backgroundImage: `url(${item.image})` }}
                     />
@@ -64,7 +61,7 @@ export default function NewsPage() {
                         {item.category}
                       </span>
                       <span className="text-[#4a5568] text-sm">
-                        {new Date(item.date).toLocaleDateString("ru-RU")}
+                        {new Date(item.date).toLocaleDateString('ru-RU')}
                       </span>
                     </div>
                     <h2 className="text-2xl font-bold text-[#003366] mb-3">
@@ -89,13 +86,13 @@ export default function NewsPage() {
               Больше новостей скоро
             </h2>
             <p className="text-[#4a5568] max-w-2xl mx-auto">
-              Мы работаем над расширением раздела новостей. Вскоре здесь
-              появятся актуальные новости о научных достижениях, конференциях,
-              публикациях и других событиях из мира науки.
+              Мы работаем над расширением раздела новостей. Вскоре здесь появятся 
+              актуальные новости о научных достижениях, конференциях, публикациях 
+              и других событиях из мира науки.
             </p>
           </div>
         </div>
       </div>
     </main>
   );
-}
+} 
